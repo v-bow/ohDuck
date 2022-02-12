@@ -8,5 +8,11 @@
             "matches": ["<all_urls>"],
             "js": ["filter.js"]
         }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["profanity_words.txt"],
+            "matches": ["<all_urls>"] 
+        }
     ]
 }

@@ -1,3 +1,10 @@
 // bad word filter for the webpage 
 
-console.log('extension run');
+
+const badWordListUrl = chrome.runtime.getURL("profanity_words.txt");
+let badWordList = [];
+fetch(badWordListUrl)
+    .then(response => response.text())
+    .then(text => {
+        badWordList = text.split(",");
+    });
