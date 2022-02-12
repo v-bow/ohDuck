@@ -3,7 +3,10 @@
     "name": "Oh, Duck!",
     "version": "0.1",
     "description": "Filters the document for bad words and replaces them with ducks.",
-    "content_scripts": {
-        "js": ["filter.js"]
-    }
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["filter.js"]
+        }
+    ]
 }
