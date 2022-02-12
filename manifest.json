@@ -3,6 +3,10 @@
     "name": "Oh, Duck!",
     "version": "0.1",
     "description": "Filters the document for bad words and replaces them with ducks.",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "test"
+    },
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
@@ -15,4 +19,5 @@
             "matches": ["<all_urls>"] 
         }
     ]
+   
 }
