@@ -4,7 +4,7 @@ let elements = [];
 
 // Runs cleanup on the document title
 let cleanup = function(badWordList) {
-	elements = Array.prototype.slice.call(document.querySelectorAll("p, span, br, h1, h2, h3, h4, h5, h6, strong, em, blockquote, qhr, code, pre, ul, li, ol, mark, ins, del, sup, sub, small, i, b, a"));
+	elements = Array.prototype.slice.call(document.querySelectorAll("title, p, span, br, h1, h2, h3, h4, h5, h6, strong, em, blockquote, qhr, code, pre, ul, li, ol, mark, ins, del, sup, sub, small, i, b, a"));
 
 	elements.forEach(function(el){
 		let words = el.textContent.split(' ')
