@@ -2,7 +2,7 @@
 
 // Runs cleanup on the document title
 let cleanup = function(badWordList) {
-	let elements = Array.prototype.slice.call(document.querySelectorAll("a,p,h1,h2,h3,h4,h5,em,span,ul"));
+	let elements = Array.prototype.slice.call(document.querySelectorAll("p,span,br,h1,h2,h3,h4,h5,h6,strong,em,blockquote,qhr,code,pre,ul,li,ol,mark,ins,del,sup,sub,small,i,b"));
 
 	elements.forEach(function(el){
 		let words = el.textContent.split(' ')
