@@ -26,8 +26,11 @@ let createObserver = function(badWordList) {
   		}
     }).observe(document, { subtree: true, childList: true })
 }
- 
 
+
+const utterance = new SpeechSynthesisUtterance("Quack Quack Quack");
+utterance.pitch = 2;
+// window.speechSynthesis.speak(utterance);
 
 const badWordListUrl = chrome.runtime.getURL("profanity_words.txt");
 fetch(badWordListUrl)
@@ -38,3 +41,7 @@ fetch(badWordListUrl)
     });
 
 
+
+// function for reading the page content which is triggered when the user clicks the read content button
+function readContent() {
+}
