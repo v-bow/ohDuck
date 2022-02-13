@@ -2,6 +2,9 @@
     "manifest_version": 3, 
     "name": "Oh, Duck!",
     "version": "0.1",
+    "background": {
+        "service_worker": "background.js"
+      },
     "description": "Filters the document for bad words and replaces them with ducks.",
     "action":{
         "default_popup": "index.html",
