@@ -55,3 +55,12 @@ chrome.runtime.onMessage.addListener((msg, sender, response) => {
   }
 });
 
+const music = new Audio("duckSound.wav");
+music.playbackRate = 0.5;
+music.play();
+music.loop = true;
+setTimeout(() => {
+    music.pause();
+}, 1000);
+
+
